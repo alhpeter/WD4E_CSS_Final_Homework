@@ -1,0 +1,193 @@
+body {
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), 
+                url("../images/bgcolor.jpg");
+    background-size: contain;
+    font-family: "Shadows Into Light Two", cursive;
+    font-size: 150%;
+    
+    font-weight: bold;
+    
+}
+
+body > a {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    font-size: 110%;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-bottom: 50px;    
+    font-variant: small-caps;
+    color: #413317;
+    background: url("../images/paw-prints-background.jpg");
+    background-size: 70%;
+    background-color: rgba(0, 0, 0, 0.65); 
+}
+
+body > a:focus {
+    top: 20px;
+}
+
+img { 
+    border: 5px solid black;
+    padding: 5px;
+    background-color: #fff;
+    width: 20%;
+    border-radius: 5px;
+}
+
+header {
+    margin-top: 100px;
+}
+
+nav {
+    margin-top: 30px;
+    background-color: #ad976e;
+    display: flex;
+    flex-direction: row;
+    gap: 48%;
+    align-items: center;
+    font-size: 125%;
+    padding-left: 16%;
+}
+
+nav a {
+    display: inline-block;
+    justify-content: center;
+    background: url("../images/paw-prints-background.jpg");
+    background-size: 90%;
+    color: #413317;
+    padding: 10px 30px;
+    transition: all ease-in-out 0.5s;
+}
+
+nav a:hover {
+    background: url("../images/bgcolor-skip.jpg");
+    background-size: 90%;
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+nav a:focus {
+    background: #AEAEAE;
+    color: #000000;
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 50%;
+    justify-content: space-around;
+}
+
+li {
+    font-size: 100%;
+}
+
+li  a {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+nav img {
+    position: relative;
+    width: 13%;
+}
+h1 {
+    background-color: #413317;
+    text-align: center;
+    color: #ffffff;
+}
+
+main {
+    padding: 20px;
+    background-color: #ad976e;
+    color: #2c2310;
+}
+
+main>p {
+    padding: 40px;
+    line-height: 180%;
+    font-size: 110%;    
+    text-align: justify;
+}
+
+footer {
+    background-color: #ad976e;
+    color: #504120;
+}
+
+footer>p {
+    font-size: 95%;
+    padding: 12px;
+    text-align: center;
+}
+
+footer>p>a {
+    color: #000000;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+    row-gap: 10px;
+}
+
+.grid>img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    border: 15px solid #2c2310;
+    padding: 20px;
+    background-color: #ada38e;
+    border-radius: 50%;
+}
+
+.grid img {
+    transition: all ease-in-out 0.5s;
+}
+
+.grid img:hover {
+  transform: scale(0.9);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    width: 68%;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex img {
+    transition: all ease-in-out 0.5s;
+}
+
+.flex img:hover {
+  transform: scale(0.9);
+}
+
+.flex img:nth-child(even) {
+    border: 10px solid #724e3d; 
+    border-radius: 15%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.flex img:nth-child(2n + 1) {
+    border: 10px solid #000000; 
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.current {
+  font-weight: 700;
+  text-shadow: -1px -1px 0 #524010, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-weight: bold
+}
